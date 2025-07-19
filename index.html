@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="TechnoVision Solutions" class="logo-image">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#profile" class="nav-link">Our Profile</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#message" class="nav-link">Message Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="welcome-text">
+                <h1>Hi <span id="userName">User</span>, Selamat datang di TechnoVision Solutions! </h1>
+                <p>Kami adalah mitra teknologi terpercaya yang siap membantu transformasi digital bisnis Anda. Jelajahi solusi inovatif kami dan hubungi tim ahli kami melalui fitur Message Us untuk konsultasi gratis.</p>
+            </div>
+            <div class="company-image">
+                <div class="company-bg-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Headquarters -->
+    <section class="section headquarter-section">
+        <div class="container">
+            <h2>Our Headquarters</h2>
+            <div class="headquarter-grid">
+                <div class="headquarter-item">
+                    <div class="circle-container">
+                        <img src="images/jakarta-office.jpg" alt="Jakarta Office" class="circle-img">
+                    </div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="headquarter-item">
+                    <div class="circle-container">
+                        <img src="images/bandung-office.jpg" alt="Bandung Office" class="circle-img">
+                    </div>
+                    <p>Bandung</p>
+                </div>
+                <div class="headquarter-item">
+                    <div class="circle-container">
+                        <img src="images/surabaya-office.jpg" alt="Surabaya Office" class="circle-img">
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Profile -->
+    <section id="profile" class="section profile-section">
+        <div class="container">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="photo-banner">
+                    <div class="banner-image">
+                        <h3>TechnoVision Solutions</h3>
+                        <p>Building the Future with Technology</p>
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <div class="about-company">
+                        <h3>About Our Company</h3>
+                        <p>TechnoVision Solutions is a leading technology company established in 2020. We specialize in providing innovative digital solutions for businesses across Indonesia. Our team consists of experienced professionals dedicated to delivering high-quality services and products.</p>
+                        <p>With headquarters in Jakarta and branch offices in Bandung and Surabaya, we serve clients nationwide with comprehensive IT solutions, web development, mobile applications, and digital transformation services.</p>
+                    </div>
+                    
+                    <div class="vision-mission">
+                        <div class="vision">
+                            <h3>Our Vision</h3>
+                            <p>To become the most trusted technology partner in Indonesia, empowering businesses through innovative digital solutions and exceptional service quality.</p>
+                        </div>
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <ul>
+                                <li>Provide cutting-edge technology solutions tailored to client needs</li>
+                                <li>Deliver exceptional customer service and support</li>
+                                <li>Foster innovation and continuous improvement</li>
+                                <li>Build long-term partnerships with our clients</li>
+                                <li>Contribute to Indonesia's digital transformation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image-container">
+                        <img src="images/ecommerce-portfolio.jpg" alt="E-Commerce Platform" class="portfolio-img">
+                    </div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Modern online shopping solution</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image-container">
+                        <img src="images/banking-portfolio.jpg" alt="Mobile Banking App" class="portfolio-img">
+                    </div>
+                    <h3>Mobile Banking App</h3>
+                    <p>Secure financial mobile application</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image-container">
+                        <img src="images/corporate-portfolio.jpg" alt="Corporate Website" class="portfolio-img">
+                    </div>
+                    <h3>Corporate Website</h3>
+                    <p>Professional business website</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="message" class="section message-section">
+        <div class="container">
+            <h2>Message Us</h2>
+            <div class="message-content">
+                <div class="form-container">
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthdate">Tanggal Lahir</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                            <span class="error-message" id="birthdateError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                                <label for="female">Perempuan</label>
+                            </div>
+                            <span class="error-message" id="genderError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messageText">Pesan</label>
+                            <textarea id="messageText" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                
+                <div class="display-info">
+                    <h3>Current time: <span id="currentTime"></span></h3>
+                    <div id="formOutput" class="form-output">
+                        <p><strong>Nama:</strong> <span id="displayName">-</span></p>
+                        <p><strong>Email:</strong> <span id="displayEmail">-</span></p>
+                        <p><strong>Tanggal Lahir:</strong> <span id="displayBirthdate">-</span></p>
+                        <p><strong>Jenis Kelamin:</strong> <span id="displayGender">-</span></p>
+                        <p><strong>Pesan:</strong> <span id="displayMessage">-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Created By Natalia Desiany Nursimin</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
